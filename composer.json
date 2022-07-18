@@ -32,7 +32,8 @@
         "php": "^7.0"
     },
     "require-dev": {
-
+        "fakerphp/faker": "^1.19",
+        "pestphp/pest": "^1.21"
     },
     "scripts": {
         "test": "./vendor/bin/pest"
