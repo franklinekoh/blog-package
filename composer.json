@@ -1,41 +1,44 @@
 {
-    "name": "ekoh/blogpost",
-    "description": "Learning package development in PHP using a simple blog post crude application",
-    "type": "library",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Ekoh Franklin",
-            "email": "ekohfranklin@gmail.com",
-            "role": "Author",
-            "homepage": "https://github.com/franklinekoh"
-        }
-    ],
-    "minimum-stability": "dev",
-    "prefer-stable": true,
-    "config": {
-        "optimize-autoloader": false,
-        "sort-packages": true,
-        "preferred-install": "dist"
-    },
-    "autoload": {
-        "psr-4": {
-            "Practice\\BlogPost\\": "src/"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Practice\\BlogPost\\Test\\": "tests/"
-        }
-    },
-    "require": {
-        "php": "^7.0"
-    },
-    "require-dev": {
-        "fakerphp/faker": "^1.19",
-        "pestphp/pest": "^1.21"
-    },
-    "scripts": {
-        "test": "./vendor/bin/pest"
+  "name": "ekoh/blogpost",
+  "description": "Learning package development in PHP using a simple blog post crude application",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Ekoh Franklin",
+      "email": "ekohfranklin@gmail.com",
+      "role": "Author",
+      "homepage": "https://github.com/franklinekoh"
     }
+  ],
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "config": {
+    "optimize-autoloader": false,
+    "sort-packages": true,
+    "preferred-install": "dist",
+    "allow-plugins": {
+      "pestphp/pest-plugin": true
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "Practice\\BlogPost\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Practice\\BlogPost\\Test\\": "tests/"
+    }
+  },
+  "require": {
+    "php": "^7.0"
+  },
+  "require-dev": {
+    "fakerphp/faker": "^1.19",
+    "pestphp/pest": "^1.21"
+  },
+  "scripts": {
+    "test": "./vendor/bin/pest"
+  }
 }
